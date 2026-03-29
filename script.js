@@ -9,7 +9,33 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Add animation to elements on scroll
+// 3D Mouse Tracking Effect on Cards
+function apply3DTilt(element) {
+    element.addEventListener('mousemove', (e) => {
+        const rect = element.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        
+        const rotateX = ((y - centerY) / centerY) * 15;
+        const rotateY = ((centerX - x) / centerX) * 15;
+        
+        element.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.1)`;
+    });
+    
+    element.addEventListener('mouseleave', () => {
+        element.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale(1)';
+    });
+}
+
+// Apply 3D tilt to all cards and buttons
+document.querySelectorAll('.skill-card, .education-card, .project-card, .cert-item, .interest-card, .work-card, .btn').forEach(card => {
+    apply3DTilt(card);
+});
+
+// Add animation to elements on scroll with intersection observer
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -100px 0px'
@@ -18,17 +44,13 @@ const observerOptions = {
 const observer = new IntersectionObserver(function (entries) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
+            entry.target.classList.add('visible');
         }
     });
 }, observerOptions);
 
 // Observe all cards for animation
-document.querySelectorAll('.skill-card, .project-card, .cert-item, .interest-card').forEach(card => {
-    card.style.opacity = '0';
-    card.style.transform = 'translateY(20px)';
-    card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+document.querySelectorAll('.skill-card, .project-card, .cert-item, .interest-card, .education-card, .work-card, .performance-card').forEach(card => {
     observer.observe(card);
 });
 
@@ -58,6 +80,8 @@ function highlightNavLink() {
 }
 
 highlightNavLink();
+
+console.log('Portfolio with 3D effects loaded! 🚀');
 
 // Add CSS for active nav link
 const style = document.createElement('style');
