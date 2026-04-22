@@ -733,6 +733,13 @@ section {
     z-index: 1;
 }
 
+.project-btn {
+    display: inline-block;
+    margin-top: 0.5rem;
+    position: relative;
+    z-index: 1;
+}
+
 .tag {
     background: linear-gradient(135deg, rgba(0, 217, 255, 0.2), rgba(255, 0, 110, 0.2));
     color: rgb(0, 217, 255);
