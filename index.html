@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om Umesh Patil - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-grid"></div>
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+    <div class="glow-orb glow-orb-3"></div>
+    <div class="scanlines"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <h1 class="logo">Om Umesh Patil</h1>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content reveal">
+                <div class="hero-profile">
+                    <div class="profile-ring">
+                        <div class="profile-ring-inner">
+                            <img src="Documents/IMAGE.jpg" alt="Om Umesh Patil" class="profile-img">
+                        </div>
+                    </div>
+                </div>
+                <h1 class="glitch-text" data-text="Om Umesh Patil">Om Umesh Patil</h1>
+                <p class="tagline tagline-typed" data-text="Aspiring Software Engineer"></p>
+                <p class="hero-description">Seeking to contribute to innovative projects and develop technical expertise in real-world applications</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary"><i class="fas fa-rocket"></i> View My Work</a>
+                    <a href="#contact" class="btn btn-secondary"><i class="fas fa-paper-plane"></i> Get In Touch</a>
+                    <button id="viewResumeBtn" class="btn btn-resume-view"><i class="fas fa-file-alt"></i> View Resume</button>
+                    <a href="Documents/Resume%20(1).pdf" download="Om_Umesh_Patil_Resume.pdf" class="btn btn-resume-download"><i class="fas fa-download"></i> Download Resume</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#about"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <!-- Resume Modal -->
+    <div id="resumeModal" class="resume-modal">
+        <div class="resume-modal-content">
+            <div class="resume-modal-header">
+                <h3><i class="fas fa-file-pdf"></i> Resume — Om Umesh Patil</h3>
+                <div class="resume-modal-actions">
+                    <button id="closeResumeBtn" class="btn-close" aria-label="Close"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            <iframe src="Documents/Resume%20(1).pdf" title="Resume PDF" class="resume-iframe"></iframe>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title reveal"><span class="title-num">01.</span> About Me</h2>
+            <div class="about-content">
+                <div class="about-image reveal">
+                    <div class="about-img-wrapper">
+                        <img src="Documents/IMAGE.jpg" alt="Om Umesh Patil">
+                        <div class="about-img-border"></div>
+                    </div>
+                </div>
+                <div class="about-text reveal">
+                    <p>I'm a dedicated software engineer with a passion for building innovative solutions. Currently pursuing my B.E. in Computer Science and Engineering from Dr. SMCE, Bengaluru. I have hands-on experience in modern development tools and technologies through my internship at Tap Academy.</p>
+                    <p>I'm committed to continuous learning and love solving complex problems through clean, efficient code.</p>
+                </div>
+                <div class="about-info">
+                    <div class="info-card reveal">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Location</h3>
+                        <p>#8 Guodra oni, Golthalli, Bidi Khanspur, Belagavi - 591106</p>
+                    </div>
+                    <div class="info-card reveal">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone</h3>
+                        <p>8050026171</p>
+                    </div>
+                    <div class="info-card reveal">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=ompatil8050026171@gmail.com" target="_blank">ompatil8050026171@gmail.com</a></p>
+                    </div>
+                    <div class="info-card reveal">
+                        <i class="fas fa-code-branch"></i>
+                        <h3>GitHub</h3>
+                        <p><a href="https://github.com/ompatil8050026171-code" target="_blank">ompatil8050026171-code</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title reveal"><span class="title-num">02.</span> Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category reveal">
+                    <h3><i class="fas fa-code"></i> Languages & Technologies</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">Core Java</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">OOPs</span>
+                        <span class="skill-tag">JDBC</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <h3><i class="fas fa-users"></i> Professional Skills</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Problem Solving</span>
+                        <span class="skill-tag">Communication</span>
+                        <span class="skill-tag">Team Collaboration</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title reveal"><span class="title-num">03.</span> Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card reveal">
+                    <div class="project-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>Fashion Store</h3>
+                    <p class="project-type">E-commerce Web Application</p>
+                    <p>A full-featured e-commerce platform showcasing modern web development practices with intuitive UI and robust backend functionality.</p>
+                    <div class="project-tags">
+                        <span>HTML/CSS</span>
+                        <span>Java</span>
+                        <span>MySQL</span>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Personal Portfolio</h3>
+                    <p class="project-type">Portfolio Website</p>
+                    <p>A responsive portfolio website showcasing my skills, projects, and experience with modern design principles and best practices.</p>
+                    <div class="project-tags">
+                        <span>HTML/CSS</span>
+                        <span>Responsive Design</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience">
+        <div class="container">
+            <h2 class="section-title reveal"><span class="title-num">04.</span> Experience</h2>
+            <div class="experience-card reveal">
+                <div class="exp-header">
+                    <h3>Intern</h3>
+                    <span class="company">Tap Academy</span>
+                </div>
+                <p class="exp-description">Completed internship, gaining hands-on experience in building projects through the efficient use of modern development tools and technologies.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title reveal"><span class="title-num">05.</span> Education</h2>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>B.E. in Computer Science and Engineering</h3>
+                        <p class="institution">Dr. SMCE, Bengaluru</p>
+                        <p class="year">2026</p>
+                        <p class="details">CGPA: 8.2</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Class XII - Pre-University Board</h3>
+                        <p class="institution">Excellent PU College Moodalidre-594227</p>
+                        <p class="year">2022 - 2022</p>
+                        <p class="details">Percentage: 82.85%</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Class X - XSEEB</h3>
+                        <p class="institution">Holy Cross, Cement School, Bidi-591106</p>
+                        <p class="year">2020 - 2020</p>
+                        <p class="details">Percentage: 83.64%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="certifications">
+        <div class="container">
+            <h2 class="section-title reveal"><span class="title-num">06.</span> Certifications</h2>
+            <div class="certifications-grid">
+                <div class="cert-card reveal">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Solutions Architecture Job Simulation</h3>
+                    <p>The Forage (AWS)</p>
+                </div>
+                <div class="cert-card reveal">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Advisors & Consulting Services Job Simulation</h3>
+                    <p>The Forage (Mastercard)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section class="hobbies">
+        <div class="container">
+            <h2 class="section-title reveal"><span class="title-num">07.</span> Hobbies & Interests</h2>
+            <div class="hobbies-list">
+                <div class="hobby-item reveal">
+                    <i class="fas fa-gamepad"></i>
+                    <span>Gaming</span>
+                </div>
+                <div class="hobby-item reveal">
+                    <i class="fas fa-headphones"></i>
+                    <span>Listening</span>
+                </div>
+                <div class="hobby-item reveal">
+                    <i class="fas fa-music"></i>
+                    <span>Music</span>
+                </div>
+                <div class="hobby-item reveal">
+                    <i class="fas fa-futbol"></i>
+                    <span>Football</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title reveal"><span class="title-num">08.</span> Get In Touch</h2>
+            <p class="contact-intro reveal">Feel free to reach out to me for any opportunities or collaborations</p>
+            <div class="contact-methods">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ompatil8050026171@gmail.com" target="_blank" class="contact-btn reveal">
+                    <i class="fas fa-envelope"></i>
+                    Email Me
+                </a>
+                <a href="tel:8050026171" class="contact-btn reveal">
+                    <i class="fas fa-phone"></i>
+                    Call Me
+                </a>
+                <a href="https://github.com/ompatil8050026171-code" target="_blank" class="contact-btn reveal" aria-label="GitHub Profile">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </a>
+                <a href="https://www.instagram.com/om__patil__6171?igsh=MXkwMno5YnFxMXZvZA==" target="_blank" class="contact-btn reveal">
+                    <i class="fab fa-instagram"></i>
+                    Instagram
+                </a>
+                <a href="https://www.linkedin.com/in/ompatil2004?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="contact-btn reveal">
+                    <i class="fab fa-linkedin"></i>
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 <span class="footer-name">Om Umesh Patil</span>. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ompatil8050026171@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/ompatil8050026171-code" target="_blank" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
